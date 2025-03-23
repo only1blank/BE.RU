@@ -674,3 +674,51 @@ text-align: center;
 .how-it-work{
     margin-top: 200px;
 }
+/* Основные стили для футера */
+.footer {
+    background-color: #ffffff; /* Белый фон */
+    padding: 20px 0;
+    border-top: 1px solid #e0e0e0; /* Серая линия сверху */
+}
+
+.footer__row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Логотип слева */
+.footer__row_logo img {
+height: 100px;
+    width: auto;
+}
+
+/* Зелёная линия по центру */
+.footer__row_menu-center img {
+    height: 200px;
+    width: auto;
+}
+
+/* Ссылки справа */
+.footer__row_menu {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    gap: 20px; /* Расстояние между ссылками */
+}
+
+.footer__menu_item {
+    font-family: 'Montserrat';
+    color: #3C6E47; /* Цвет ссылок */
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.footer__menu_item:hover {
+    color: #2a4e33; /* Цвет ссылок при наведении */
+}
