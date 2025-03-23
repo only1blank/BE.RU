@@ -1,12 +1,12 @@
 <?php
 
-namespace App\Http\Livewire;
+namespace App\Livewire;
 
 use Livewire\Component;
+use App\Mail\FeedbackMail;
 use Illuminate\Support\Facades\Mail;
-use App\Mail\FeedbackMail; // Создайте этот Mailable класс для отправки email
 
-class Helpme extends Component
+class FeedbackForm extends Component
 {
     public $name;
     public $email;
@@ -22,17 +22,18 @@ class Helpme extends Component
     {
         $this->validate();
 
-   
-        Mail::to('support@be.ru')->send(new FeedbackMail($this->name, $this->email, $this->message));
 
-      
+
+        
+
         $this->reset(['name', 'email', 'message']);
 
-     
+  
         session()->flash('message', 'Ваше сообщение успешно отправлено!');
     }
+
     public function render()
     {
-        return view('livewire.helpme');
+        return view('livewire.feedback-form');
     }
 }

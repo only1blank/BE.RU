@@ -11,7 +11,7 @@
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <link rel="stylesheet" type="text/css" href="css/app.css">
 
@@ -48,54 +48,15 @@
         <span class="delivery-block__partner">вместе с BE.RU</span>
 
     </div>
-    <div class="about-us">
-        <div class="about-us__description">
-            <p class="about-us__description_text">Компания be.ru — это современный сервис доставки, который предлагает
-                своим клиентам быстрые и удобные решения для транспортировки товаров.
-                Мы понимаем, как важно для вас получать заказы вовремя и в целости, поэтому наш приоритет — высокое
-                качество обслуживания и надежность.</p>
-        </div>
-        <div class="about-us_right-item">
-            <img src="{{asset('img/сargo supply chain and supply chain management.svg')}}"
-                class="about-us_right-item_img" alt="">
-        </div>
-    </div>
+@livewire('about-us')
 
     @livewire('news-slider')
     @livewire('helpme')
-    <div class="how-it-work">
-        <div class="container-how-it-work">
-            <div class="how-it-work__title">
-                Как это работает?
-            </div>
-            <div class="how-it-work__description">
-                <img class="how-it-work__description_item" src="{{asset('img/howwork.png')}}" alt="">
-            </div>
-        </div>
-    </div>
-    <footer class="footer">
-        <div class="footer__row">
-
-            <div class="footer__row_logo">
-                <a href="{{ route('welcome') }}">
-                    <img src="{{ asset('img/Group 10.png') }}" alt="logo">
-                </a>
-            </div>
+    @livewire('howitwork')
+@livewire('footer')
 
 
-            <div class="footer__row_menu-center">
-                <img class="footer__menu_center" src="{{ asset('img/green line (1).png') }}" alt="green line">
-            </div>
-
-
-            <div class="footer__row_menu">
-                <a class="footer__menu_item" href="{{route('welcome')}}">Главная</a>
-                <a class="footer__menu_item" href="">Отследить посылку</a>
-                <a class="footer__menu_item" href="">Отправить посылку</a>
-                <a class="footer__menu_item" href="">Правила приёма и доставки</a>
-            </div>
-        </div>
-    </footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+@livewireScripts
 </body>
-
 </html>

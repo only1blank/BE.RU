@@ -625,7 +625,7 @@ letter-spacing: 0%;
 text-align: left;
 width: 545px;
 }
-.help-form_form_btn{
+.button-helpform{
     color: rgb(255, 255, 255);
 font-family: Raleway;
 font-size: 24px;
@@ -674,11 +674,12 @@ text-align: center;
 .how-it-work{
     margin-top: 200px;
 }
-/* Основные стили для футера */
+
 .footer {
-    background-color: #ffffff; /* Белый фон */
+    z-index: -1;
+    background-color: #ffffff; 
     padding: 20px 0;
-    border-top: 1px solid #e0e0e0; /* Серая линия сверху */
+    border-top: 1px solid #e0e0e0; 
 }
 
 .footer__row {
@@ -690,29 +691,28 @@ text-align: center;
     padding: 0 20px;
 }
 
-/* Логотип слева */
+
 .footer__row_logo img {
 height: 100px;
     width: auto;
 }
 
-/* Зелёная линия по центру */
+
 .footer__row_menu-center img {
     height: 200px;
     width: auto;
 }
 
-/* Ссылки справа */
 .footer__row_menu {
     display: flex;
     flex-direction: column;
     text-align: right;
-    gap: 20px; /* Расстояние между ссылками */
+    gap: 20px; 
 }
 
 .footer__menu_item {
     font-family: 'Montserrat';
-    color: #3C6E47; /* Цвет ссылок */
+    color: #3C6E47; 
     text-decoration: none;
     font-size: 16px;
     font-weight: 500;
@@ -720,5 +720,81 @@ height: 100px;
 }
 
 .footer__menu_item:hover {
-    color: #2a4e33; /* Цвет ссылок при наведении */
+    color: #2a4e33; 
+}
+.modal {
+    display: none; 
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5); 
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 90%;
+    max-width: 500px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.close {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #888;
+}
+
+.close:hover {
+    color: #000;
+}
+
+
+.modal-content form {
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-content label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.modal-content input,
+.modal-content textarea {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.modal-content button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #3C6E47;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.modal-content button:hover {
+    background-color: #2a4e33;
+}
+.modal {
+    z-index: 1055 !important; 
+}
+
+.modal-backdrop {
+    z-index: 1050 !important; 
 }
