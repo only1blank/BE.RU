@@ -9,6 +9,7 @@
 
         <!-- Styles -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
+        <link rel="stylesheet" type="text/css" href="css/app.css">
     <title>Отслеживание посылки</title>
     @livewireStyles
 </head>
