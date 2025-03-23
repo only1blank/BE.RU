@@ -1,4 +1,4 @@
-# <img src="public/img/be.ru.png" alt="Описание изображения" width="50" />
+# <img src="public/img/be.ru.png" alt="Описание изображения" width="200" />
 
 [![GitHub](https://img.shields.io/badge/GitHub-Repository-blue)](https://github.com/only1blank/BE.RU)
 
