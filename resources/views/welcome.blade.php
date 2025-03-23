@@ -69,5 +69,20 @@
         </div>
     </div>
 </div>
+<footer class="footer">
+    <div class="footer__row">
+        <div class="footer__row_logo">
+            <a href="{{ route('welcome')}}"><img src="{{ asset('img/be.ru.png')}}" alt="logo"></a>
+        </div>
+        <div class="footer__row_menu">
+            <a class="footer__menu_item" href="{{ route('about')}}">О компании</a>
+            <a class="footer__menu_item" href="{{ route('news')}}">Новости</a>
+            <a class="footer__menu_item" href="{{ route('help')}}">{{ trans('messages.help') }}</a>
+            <a class="footer__menu_item" href="{{ route('contacts')}}">{{ trans('messages.contacts') }}</a>
+        </div>
+        <div class="footer__row_social">
+            <a href="#"><img src="{{ asset('img/facebook.png')}}" alt="facebook"></a>
+    </div>
+</footer>
     </body>
 </html>
