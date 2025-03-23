@@ -10,7 +10,6 @@
     <p class="help-form_form_description">Техническая поддержка всегда готова ответить на все интересующие вас вопросы</p>
     <button class="help-form_form_btn">Написать</button>
 </form>
-
         </div>
     </div>
 </div>
